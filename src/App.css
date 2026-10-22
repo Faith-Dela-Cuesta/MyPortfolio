@@ -68,16 +68,22 @@ main p {
 }
 
 .profile-photo {
-  width: 250px;
-  height: 310px;
-  border: 130px 130px 8px 8px;
+  width: 270px;
+  height: 340px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: 8px solid #f8f4ed;
+  border-radius: 140px 140px 8px 8px;
   background-color: #d9c6b0;
+  box-shadow: 0 12px 30px rgba(75, 59, 48, 0.12);
 }
 
-.prfile-photo img {
+.profile-photo img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .nav-links {
@@ -114,4 +120,63 @@ main p {
   margin: 0 auto;
   color: #75685c;
   line-height: 1.8;
+}
+
+
+.about {
+  padding: 100px 15%;
+  background-color: #f8f4ed;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 45px;
+  background-color: #eee3d4;
+  border: 1px solid #e2d2bf;
+  border-radius: 4px;
+}
+
+.about-label {
+  color: #a17b56;
+  font-size: 11px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: normal;
+  color: #493a2e;
+  margin-bottom: 20px;
+}
+
+.about h2 span {
+  color: #94704e;
+  font-style: italic;
+}
+
+.about-line {
+  width: 55px;
+  height: 1px;
+  background-color: #a17b56;
+  margin: 0 auto 25px;
+}
+
+.about-description {
+  max-width: 540px;
+  margin: 0 auto;
+  color: #75685c;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.about-note {
+  margin-top: 25px;
+  color: #94704e;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
 }

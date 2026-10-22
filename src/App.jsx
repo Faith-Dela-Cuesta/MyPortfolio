@@ -22,18 +22,35 @@ function App() {
        </div>
 
        <div className="profile-photo">
-         <img src = "/src/assets/profile.jpg." alt="Faith's profile" />
+         <img src = "/src/assets/profile-photo.jpg" alt="profile photo" />
          </div>
       </main>
 
       <section id="about" className="about">
-        <h2>About Me</h2>
-        <p>I'm Faith Dela Cuesta. I enjoy exploring new things, spending time on my hobbies, and making the most of every experience.
-        </p>
-      </section>
+        <div className="about-content">
+           <p className="about-label">GET TO KNOW ME</p>
+        
+          <h2>A little about <span>myself.</span></h2>
 
+        <div className="about-line"></div>
+
+        <p className="about-description">
+          I'm Faith Dela Cuesta. I enjoy exploring new things,
+         spending time on my hobbies, and making the most of
+         every experience. I'm always open to learning and
+         discovering something new.
+        </p>
+
+         <p className="about-note">A little creativity goes a long way.</p>
+        </div>
+        
+      </section>
     </div>
   )
 }
 
 export default App
+
+
+
+
